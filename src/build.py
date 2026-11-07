@@ -11,14 +11,16 @@ head='''<title>NOETIS · A new place for people who pay attention</title>
 <meta property="og:site_name" content="NOETIS">
 <meta property="og:title" content="NOETIS · Everyone’s looking. Not everyone notices.">
 <meta property="og:description" content="A new place for people who pay attention. Be among the first to know when NOETIS opens its eyes.">
-<meta property="og:image" content="og.png">
+<link rel="canonical" href="https://noetis.in/">
+<meta property="og:url" content="https://noetis.in/">
+<meta property="og:image" content="https://noetis.in/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="A flat black cartoon eye on butter yellow.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="NOETIS · Everyone’s looking. Not everyone notices.">
 <meta name="twitter:description" content="A new place for people who pay attention.">
-<meta name="twitter:image" content="og.png">
+<meta name="twitter:image" content="https://noetis.in/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=JetBrains+Mono:wght@500&family=Syncopate:wght@400;700&display=swap">

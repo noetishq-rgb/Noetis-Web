@@ -10,7 +10,7 @@
     SIGNUP_MODE: "supabase",  // "json" | "formspree" | "supabase"
     ANSWERS_ENDPOINT: "https://bvrqomgxijnjblieddrz.supabase.co/rest/v1/first_list_answers", // optional: where step 2 answers go (defaults to SIGNUP_ENDPOINT, except supabase)
     SUPABASE_ANON_KEY: "sb_publishable_ZxobYACLK3qDxJ8FkMRo8A_OyTc4hwB", // public anon key only, never a service key
-    SITE_URL: "",             // e.g. https://noetis.example, used for canonical + share links
+    SITE_URL: "https://noetis.in",             // e.g. https://noetis.example, used for canonical + share links
     CONTROLLER_NAME: "",      // legal name responsible for the data
     CONTACT_EMAIL: "",        // privacy contact
     TIMEOUT_MS: 12000
@@ -959,7 +959,7 @@
     pc.appendChild(document.createTextNode("Your details are controlled by " + (CFG.CONTROLLER_NAME || "NOETIS") + "."));
     if(CFG.CONTACT_EMAIL){ pc.appendChild(document.createTextNode(" Questions or deletion requests: ")); var ml = document.createElement("a"); ml.href = "mailto:"+CFG.CONTACT_EMAIL; ml.textContent = CFG.CONTACT_EMAIL; pc.appendChild(ml); pc.appendChild(document.createTextNode(".")); }
   }
-  if(CFG.SITE_URL){
+  if(CFG.SITE_URL && !document.querySelector('link[rel="canonical"]')){
     var can = document.createElement("link"); can.rel = "canonical"; can.href = CFG.SITE_URL; document.head.appendChild(can);
   }
   var dlg = $("privacy");
