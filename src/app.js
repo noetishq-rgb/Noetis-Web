@@ -750,7 +750,7 @@
   /* ======================================================================
      04 The First List: real submission or an honest failure
      ====================================================================== */
-  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  var EMAIL_RE = /^[A-Za-z0-9.!#$%&'*+\/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?)*\.[A-Za-z]{2,}$/;
   function fnv(s){ var h = 2166136261; for(var i=0;i<s.length;i++){ h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return (h>>>0).toString(36).toUpperCase(); }
   function submitSignup(payload, endpoint){
     var url = endpoint || CFG.SIGNUP_ENDPOINT, mode = CFG.SIGNUP_MODE;
